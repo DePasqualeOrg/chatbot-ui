@@ -4,6 +4,8 @@ services:
   chatgpt:
     build: .
     ports:
-      - 3000:3000
-    environment:
-      - 'OPENAI_API_KEY='
+      - 4242:3000
+    # environment:
+    #   - 'OPENAI_API_KEY='
+    env_file:
+      - .env
